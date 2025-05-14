@@ -9,7 +9,7 @@ export interface ModalProps {
   onClose: () => void;
   title?: string;
   children?: ReactNode;
-  width?: 'sm' | 'md' | 'lg' | 'xl' | '2xl' | '3xl' | 'full';
+  width?: 'sm' | 'md' | 'lg' | 'xl' | '2xl' | '3xl' | '4xl' | 'full';
   className?: string;
 }
 
@@ -50,6 +50,7 @@ export const Modal: FC<ModalProps> = ({
             'max-w-xl': width === 'xl',
             'max-w-2xl': width === '2xl',
             'max-w-3xl': width === '3xl',
+            'max-w-4xl': width === '4xl',
             'w-full': width === 'full',
           },
           /*           css`

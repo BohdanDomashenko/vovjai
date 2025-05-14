@@ -61,7 +61,7 @@ export const Work: FC<WorkProps> = ({ data }) => {
         isOpen={isDescriptionOpen}
         onClose={() => setIsDescriptionOpen(false)}
         title={data.title}
-        width='xl'
+        width='4xl'
       >
         <p>{data.longDescription}</p>
         <div>
