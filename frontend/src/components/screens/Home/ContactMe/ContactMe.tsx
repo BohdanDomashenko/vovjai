@@ -11,7 +11,6 @@ import youtubeIcon from '../../../../assets/icons/youtube.svg';
 import telegramIcon from '../../../../assets/icons/telegram.svg';
 import whatsappIcon from '../../../../assets/icons/whatsapp.svg';
 import gmailIcon from '../../../../assets/icons/gmail.svg';
-import VJlogo2 from '../../../../assets/images/VJlogo2.svg';
 
 const socialLinks = [
   {

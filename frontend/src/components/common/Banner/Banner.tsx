@@ -1,7 +1,6 @@
 import { FC } from 'react';
 import rounderArrow from '../../../assets/icons/rounder-arrow.svg';
 import { cx } from 'class-variance-authority';
-import vjlogo2 from '../../../assets/images/VJlogo2.svg';
 
 export interface BannerProps {
   title: string;
