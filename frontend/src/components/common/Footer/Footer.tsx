@@ -25,7 +25,7 @@ export const Footer: FC<FooterProps> = ({ title, children, bgImage, className })
           <h2 className='font-serif text-2md leading-tight md:text-lg'>{title}</h2>
         </div>
         <div className='my-4'>{children}</div>
-        <div className='flex justify-center'>
+        <div className='flex justify-center py-8'>
           <img src={logo} alt='logo' className='w-1/2' />
         </div>
         <div className='mt-6 grid grid-cols-3'>
@@ -33,7 +33,7 @@ export const Footer: FC<FooterProps> = ({ title, children, bgImage, className })
             <div>{new Date().getFullYear()} ©</div>
             <div>{localize('all_rights_reserved')}</div>
           </div>
-          <div className='flex flex-col items-center justify-center'>
+          <div className='flex flex-col items-center justify-center '>
             <img src={VJlogo2} alt='VJlogo2' className='w-16 md:w-20' />
             <div className='mt-1 text-xxs md:text-sm'>Vovjai.com</div>
           </div>

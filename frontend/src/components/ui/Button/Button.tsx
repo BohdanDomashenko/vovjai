@@ -6,7 +6,7 @@ const button = cva(
   {
     variants: {
       intent: {
-        default: 'bg-dark-950',
+        default: 'bg-black',
         primaryGradient: 'from-primary-600 to-primary-400 bg-gradient-to-r',
         dark: 'bg-gray-700',
         extraDark: 'bg-gray-950',

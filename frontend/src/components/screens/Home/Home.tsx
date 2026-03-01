@@ -1,5 +1,4 @@
 import { FC, useEffect } from 'react';
-import vovjaiPortfolioMasterImg from '../../../assets/images/baner-animation.webp';
 import { useLocalization } from '../../../common/hooks';
 import { Banner, CategoryBanner } from '../../common';
 import { Button } from '../../ui';
@@ -10,8 +9,6 @@ import { ContactMe } from './ContactMe';
 import { Footer } from '../../common/Footer';
 import homeFooterBg from '../../../assets/images/home-footer-bg.png';
 import instagramIcon from '../../../assets/icons/instagram2.svg';
-import heartImg from '../../../assets/icons/heart.svg';
-import rainbowLineImg from '../../../assets/images/rainbow-line.png';
 import { Link, useLocation } from 'react-router-dom';
 
 export const Home: FC = () => {
@@ -25,12 +22,7 @@ export const Home: FC = () => {
 
   return (
     <div className={`bg-[url('/bg.jpg')]`}>
-      <div className='container flex max-w-6xl flex-col items-center bg-gradient-to-r from-dark-700 to-dark-800 px-0 pb-10 pt-[60px]'>
-        <div className='bg-black md:p-4'>
-          <img src={vovjaiPortfolioMasterImg} alt='vovjai-portfilio-master' className='border' />
-        </div>
-      </div>
-      <div className='container flex max-w-6xl flex-col items-center bg-gradient-to-r from-dark-700 to-dark-800'>
+      <div className='container flex max-w-6xl flex-col items-center bg-gradient-to-r from-dark-700 to-dark-800 pt-[100px]'>
         <Banner title={localize('promo_title')} text={localize('promo_text')} />
         <div className='mt-5 flex flex-wrap justify-center gap-4 md:flex-nowrap'>
           <a href='#about_me'>
@@ -72,8 +64,6 @@ export const Home: FC = () => {
               @sorryiambroke
             </Button>
           </a>
-          <img src={heartImg} alt='heart' className='mt-6 h-8 w-8' />
-          <img src={rainbowLineImg} alt='rainbow-line' className='mt-8 w-full' />
         </div>
       </Footer>
     </div>

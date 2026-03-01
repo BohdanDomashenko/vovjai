@@ -42,7 +42,7 @@ export const Works: FC = () => {
         </div>
       </Container>
       <Container className='pb-20'>
-        <div className='flex flex-wrap justify-center py-4'>
+        <div className='flex flex-wrap justify-center py-4 gap-3'>
           {subcategories?.map((subcategory) => (
             <a
               key={subcategory.id}

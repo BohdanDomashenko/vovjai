@@ -24,7 +24,6 @@ export const Banner: FC<BannerProps> = ({ title, text, className }) => {
         </div>
         <img src={rounderArrow} alt='rounder-arrow' className='rotate-180' />
       </div>
-      <img src={vjlogo2} alt='VJlogo2' className='w-12 opacity-80' />
     </div>
   );
 };

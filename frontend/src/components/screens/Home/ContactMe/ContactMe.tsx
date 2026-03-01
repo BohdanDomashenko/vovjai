@@ -76,10 +76,7 @@ export const ContactMe: FC = () => {
             <img src={gmailIcon} height={35} width={35} />
             <span>vvkripak@gmail.com</span>
           </a>
-        </div>
-        <div className='mt-10 flex justify-center'>
-          <img src={VJlogo2} height={150} width={150} />
-        </div>
+      </div>
       </Container>
     </div>
   );

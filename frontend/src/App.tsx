@@ -1,19 +1,38 @@
 import { useLocalization } from './common/hooks';
 import { LoaderScreen, Navbar } from './components/common';
 import { Home } from './components/screens';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider, useLocation, Outlet } from 'react-router-dom';
 import { Works } from './components/screens/Works';
 import useDebounce from './common/hooks/useDebounce';
 import { useEffect } from 'react';
+import ReactGA from 'react-ga4';
+
+function GAPageView() {
+  const location = useLocation();
+  useEffect(() => {
+    if (import.meta.env.PROD) {
+      ReactGA.send({ hitType: 'pageview', page: location.pathname + location.search });
+    }
+  }, [location]);
+  return null;
+}
+
+function Layout() {
+  return (
+    <>
+      <GAPageView />
+      <Outlet />
+    </>
+  );
+}
 
 const router = createBrowserRouter([
   {
-    path: '/',
-    element: <Home />,
-  },
-  {
-    path: '/works/:id',
-    element: <Works />,
+    element: <Layout />,
+    children: [
+      { path: '/', element: <Home /> },
+      { path: '/works/:id', element: <Works /> },
+    ],
   },
 ]);
 

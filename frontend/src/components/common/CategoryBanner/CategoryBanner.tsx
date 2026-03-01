@@ -50,9 +50,9 @@ export const CategoryBanner: FC<CategoryBannerProps> = ({
         onMouseOver={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
-        <div className='flex w-6/12 flex-col items-center md:flex-row'>
+        <div className='flex flex-col items-center md:flex-row'>
           <div className='flex flex-col items-center justify-center gap-sm md:inline-flex md:w-[min-content] md:flex-row'>
-            <h2 className='mt-1 p-2 text-center font-sans text-md font-bold uppercase leading-[25px] text-white md:text-left md:text-lg md:leading-[50px]'>
+            <h2 className='mt-1 md:p-2 pt-2 text-center font-sans text-md font-bold uppercase leading-[25px] text-white md:text-left md:text-lg md:leading-[50px] md:min-w-[400px]'>
               {title}
             </h2>
             <Separator className='ml-4 hidden md:block' />
@@ -84,7 +84,7 @@ export const CategoryBanner: FC<CategoryBannerProps> = ({
         </div>
         {isBreakpointLowerThan('md') && (
           <div className='w-full'>
-            <div className='grid max-w-[70px] grid-cols-2 gap-3'>
+            <div className='grid max-w-[80px] grid-cols-2 gap-3'>
               {instruments.map((instrument, index) => (
                 <img
                   key={index}

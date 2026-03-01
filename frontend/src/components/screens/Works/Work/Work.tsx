@@ -38,7 +38,7 @@ export const Work: FC<WorkProps> = ({ data }) => {
 
   return (
     <>
-      <div className='w-full bg-black p-3'>
+      <div className='w-full bg-black p-3 flex flex-col justify-center'>
         <div className='w-full ring-1 ring-white'>
           <img src={getUploadUrl(data.previewImage.url)} alt='work' className='w-full' />
           <div className='flex items-center justify-between gap-2 bg-black p-2'>
